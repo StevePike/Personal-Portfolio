@@ -52,14 +52,20 @@
 		
 		<!-- Main front page properties -->
 
-		<div class="main">
-		<div class="container">
-		<div class="row">
+	<div class="main">
+				<div class= "col-xs-6 col-sm-12" id="hero">
 
-		
-		</div>
-		</div>
-		</div>
+				<h1>Steven Pike <span class="yellow">Designs</span></h1>
+				<hr class="style"></hr>
+				<h2><span class="yellow">Freelance Web Design & Front-End Developer,</span><br>based in Berkshire, England</h2>
+				<hr class="style1"></hr>
+				
+				<a class="ghost-button1" href="#">PORTFOLIO</a>
+				<a class="ghost-button2" href="#">About</a>
+				<a class="ghost-button3" href="#">Contact</a>
+				</div>
+
+	</div>
 
 
 		
