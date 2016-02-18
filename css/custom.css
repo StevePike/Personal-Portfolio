@@ -5,6 +5,8 @@ html, body, .viewport {
 		padding: 0;
 }
 
+/*Typography*/
+
 @font-face {
     font-family: osh;
     src: url(../fonts/ostrichsans-heavy1-webfont.eot);
@@ -42,6 +44,22 @@ html, body, .viewport {
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: dense;
+    src: url(../fonts/dense-regular-webfont.eot);
+    src: url(../fonts/dense-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/dense-regular-webfont.woff2) format('woff2'),
+         url(../fonts/dense-regular-webfont.woff) format('woff'),
+         url(../fonts/dense-regular-webfont.ttf) format('truetype'),
+         url(../fonts/dense-regular-webfont.svg#denseregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*Hero Image Front Page above fold*/
 
 .main {
 	height: 100%;
@@ -101,10 +119,11 @@ color: white;
 font-size: 7.0vw;
 position: absolute;
 font-family: osh;
-
+letter-spacing: 2px;
 left: 50%;
 top: 35%;
 transform: translate(-50%, -50%);
+text-align: center;
 
 }
 
@@ -115,7 +134,7 @@ font-size: 2vw;
 position: absolute;
 font-family: osm;
 font-weight: 900;
-letter-spacing: 2px;
+letter-spacing: 4px;
 text-align: center;
 
 
@@ -131,7 +150,7 @@ transform: translate(-50%, -50%);
   height: 7%;
   font-size: 1.5vw;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: osh;
   padding: 8px;
   color: #fff;
@@ -167,7 +186,7 @@ text-decoration: none;
   font-size: 1.5vw;
   font-weight: bold;
   font-family: osh;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   padding: 8px;
   color: #fff;
   border: 2px solid #fff;
@@ -198,7 +217,7 @@ text-decoration: none;
   width: 10%;
   height: 7%;
   font-size: 1.5vw;
-  font-weight: bolder;
+  font-weight: bold;
   font-family: osh;
   letter-spacing: 1px;
   padding: 8px;
@@ -252,6 +271,190 @@ hr.style1 {
     height: 3px;
     background-image: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
 }
+
+.logo{
+position: absolute;
+top: 8%;
+left:45%;
+
+}
+
+body {
+  background-color: #222;
+
+}
+p {
+  margin-left: -70px;
+  font-family: osm;
+}
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+.scroll-btn {
+	display: block;
+	position: relative;
+	top: 80%;
+	left: 0;
+	text-align: center;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: osm;
+	letter-spacing: 5px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+
+/*About me section */
+
+#about{
+
+height: 800px;
+width: 100%;
+background-color: white;
+
+}
+
+#about > h2{
+
+font-family: osm;
+letter-spacing: 8px;
+font-size: 4vw;
+text-align: center;
+
+}
+
+#about > .parallax{
+position: relative;
+height: 45%;
+width:  400px;
+top: 9%;
+left: 40%;
+
+background-color: pink;
+border-radius: 50%;
+
+background:
+url("../graphics/me.jpg") no-repeat 52% 185%;
+background-attachment: fixed;
+background-size: 600px 800px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

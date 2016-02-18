@@ -53,20 +53,44 @@
 		<!-- Main front page properties -->
 
 	<div class="main">
-				<div class= "col-xs-6 col-sm-12" id="hero">
-
-				<h1>Steven Pike <span class="yellow">Designs</span></h1>
+		<div class= "col-xs-6 col-sm-12" id="hero">
+			<span class="logo"><img src="../graphics/logo.png" alt="light bulb" style="width:30%;height:8%;"></span>
+			<h1>STEVEN PIKE <span class="yellow">DESIGNS</span></h1>
 				<hr class="style"></hr>
-				<h2><span class="yellow">Freelance Web Design & Front-End Developer,</span><br>based in Berkshire, England</h2>
+			<h2><span class="yellow">FREELANCE WEB DESIGN & Front-End Developer</span><br>based in Berkshire, England</h2>
 				<hr class="style1"></hr>
 				
 				<a class="ghost-button1" href="#">PORTFOLIO</a>
 				<a class="ghost-button2" href="#">About</a>
 				<a class="ghost-button3" href="#">Contact</a>
-				</div>
-
+				
+				
+			<span class="scroll-btn">
+				<a href="#">
+					<span class="mouse">
+						<span></span>
+					</span>
+				</a>
+					<p>scroll down</p>
+			</span>
+		</div>
 	</div>
-
+	
+	
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12" id="about">
+			
+				<br><br><h2>Why hire <span class="yellow">me?</span></h2>
+				<br>
+				<div class="parallax">
+				</div>
+			
+			
+			</div>
+		</div>
+	</div>
 
 		
 		
