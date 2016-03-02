@@ -33,17 +33,6 @@ html, body, .viewport {
 
 }
 
-@font-face {
-    font-family: exo;
-    src: url(../fonts/exo-regular-webfont.eot);
-    src: url(../fonts/exo-regular-webfont.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/exo-regular-webfont.woff2) format('woff2'),
-         url(../fonts/exo-regular-webfont.woff) format('woff'),
-         url(../fonts/exo-regular-webfont.ttf) format('truetype'),
-         url(../fonts/exo-regular-webfont.svg#exoregular) format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: dense;
@@ -58,52 +47,222 @@ html, body, .viewport {
 
 }
 
+@font-face {
+    font-family: rale;
+    src: url(../fonts/raleway-light1-webfont.eot);
+    src: url(../fonts/raleway-light1-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/raleway-light1-webfont.woff2) format('woff2'),
+         url(../fonts/raleway-light1-webfont.woff) format('woff'),
+         url(../fonts/raleway-light1-webfont.ttf) format('truetype'),
+         url(../fonts/raleway-light1-webfont.svg#ralewaylight) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 /*Hero Image Front Page above fold*/
 
-.main {
+#main {
 	height: 100%;
 	width: 100%;
 
 	background: 
 	
-	radial-gradient(
- 
-	rgba(0, 0, 0, 0.1),
-	rgba(0, 0, 0, 0.2),
-	rgba(0, 0, 0, 0.2),
-	rgba(0, 0, 0, 0.2),
-	rgba(0, 0, 0, 0.2),
-	rgba(0, 0, 0, 0.3),	
-	rgba(0, 0, 0, 0.4),
-	rgba(0, 0, 0, 0.5),
-	rgba(0, 0, 0, 0.6),
-	rgba(0, 0, 0, 0.7),
-	rgba(0, 0, 0, 0.8),
-	rgba(0, 0, 0, 0.9)
-
-
-    ),
-	
-	url("../graphics/background3.jpg") no-repeat center center;
+	url("../graphics/flat.jpg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	position:relative;
-}
-
-.main:before{
-
-    content:'';
-    position: absolute;
-	width: 96%;
-	height: 92%;
-    border: 2px solid white;
-	top: 4%;
-	left: 2%;
+	font-family: rale;
+	font-size: 65px;
+	color: white;
 
 }
+
+
+#text{
+
+display: inline-block;
+position: absolute;
+top: 46%;
+width: 100%;
+
+}
+
+@media (max-width: 992px) { 
+
+.col-sm-12{
+text-align: center;
+font-size: 55px;
+
+}
+
+
+}
+ 
+ @media (min-width: 992px) { 
+
+.col-md-5.steven{
+text-align: right;
+
+}
+
+.col-md-5.designs{
+text-align: left;
+}
+
+.col-md-2.pike{
+text-align: center;
+}
+
+ }
+ 
+ 
+#subtext{
+
+display: inline-block;
+position: absolute;
+top: 55.5%;
+width: 100%;
+font-size: 20px;
+text-align: center;
+
+
+}
+
+
+
+hr.style3 {
+
+	top: 50%;
+	vertical-align: middle;
+	width: 10%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
+} 
+
+ 
+hr.style2 {
+
+	top: 60%;
+	width: 5%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(225, 225, 225, 0), rgba(225, 225, 225, 1), rgba(225, 225, 225, 0));
+} 
+
+.bold{
+
+font-weight: bolder;
+color: #1A4C6D;
+
+}
+
+.navbar{
+
+height:10%;
+font-size: 20px;
+color: white;
+
+}
+#myNavbar{
+
+color: white;
+}
+
+
+.icon-bar{
+color: white;
+background-color:white;
+border: white;
+
+}
+
+.navbar .nav > li > a {
+   color:white;
+   background-color:#3498DB;
+}
+
+.navbar .nav > li > a:hover {
+   background-color:#3498DB;
+   color: #050F15;
+}
+
+.navbar .nav > li > a:active{
+   background-color:#3498DB;
+   color: #050F15;
+   font-weight: bolder;
+}
+
+
+
+#glow{
+
+display: inline-block;
+position: absolute;
+top: 31.5%;
+width: 100%;
+margin:-10px -5px;
+font-size: 20px;
+text-align: center;
+
+
+
+}
+
+@-webkit-keyframes greenPulse {
+    from { background-color: #749a02; -webkit-box-shadow: 0 0 0 #333; }
+to { background-color: #91bd09; -webkit-box-shadow: 0px 0px 50px #91bd09; }
+}
+
+a.green.button {
+    background-color: #749a02;
+    border-radius: 0.1em;
+    color: #fff;
+padding-top: 1.3em;
+padding-left: 1.65em;
+padding-bottom: 1.1em;
+padding-right: 2.15em;
+
+    text-decoration: none;
+}
+
+a.green.button:hover {
+    background-color: #91bd09;
+    -webkit-animation-name: greenPulse;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-box-shadow: 0px 0px 50px #91bd09;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #hero{
 
@@ -118,12 +277,15 @@ height:100%;
 color: white;
 font-size: 7.0vw;
 position: absolute;
-font-family: osh;
-letter-spacing: 2px;
+font-family: dense;
+letter-spacing: 9px;
+font-weight: 900;
 left: 50%;
-top: 35%;
+top: 33%;
 transform: translate(-50%, -50%);
 text-align: center;
+width: 100%;
+
 
 }
 
@@ -132,9 +294,9 @@ text-align: center;
 color:white;
 font-size: 2vw;
 position: absolute;
-font-family: osm;
+font-family: dense;
 font-weight: 900;
-letter-spacing: 4px;
+letter-spacing: 9px;
 text-align: center;
 
 
@@ -143,6 +305,12 @@ top: 52%;
 transform: translate(-50%, -50%);
 
 }
+.yellow{
+
+color: #3498db;
+font-weight: bold;
+}
+
 
 .ghost-button1{
   display: inline-block;
@@ -153,7 +321,7 @@ transform: translate(-50%, -50%);
   letter-spacing: 1px;
   font-family: osh;
   padding: 8px;
-  color: #fff;
+  color: white;
   border: 2px solid #fff;
   text-align: center;
   outline: none;
@@ -171,13 +339,15 @@ transform: translate(-50%, -50%);
 .ghost-button1:active {
 
 text-decoration: none;
-  color: yellow;
-  border-color: yellow;
+  color: #3498db;
+  border-color: #3498db;
 
   font-weight: bold;
   transition: border-color 0.4s ease-in,
               color 0.4s ease-in;
 }
+
+
 
 .ghost-button2{
   display: inline-block;
@@ -202,11 +372,12 @@ top: 70%;
 transform: translate(-170%, -50%);
 
 }
+
 .ghost-button2:hover,
-.ghost-button2:active {
-text-decoration: none;
-  color: yellow;
-  border-color: yellow;
+.ghost-button2:active{
+  text-decoration: none;
+  color: #3498db;
+  border-color: #3498db;
   font-weight: bold;
   transition: border-color 0.4s ease-in,
               color 0.4s ease-in;
@@ -238,17 +409,13 @@ transform: translate(70%, -50%);
 .ghost-button3:hover,
 .ghost-button3:active {
 text-decoration: none;
-  color: yellow;
-  border-color: yellow;
+  color: #3498db;
+  border-color: #3498db;
   font-weight: bold;
   transition: border-color 0.4s ease-in,
               color 0.4s ease-in;
 }
-.yellow{
 
-color: yellow;
-font-weight: bold;
-}
 
 hr.style {
 
@@ -279,13 +446,10 @@ left:45%;
 
 }
 
-body {
-  background-color: #222;
 
-}
 p {
   margin-left: -70px;
-  font-family: osm;
+
 }
 @-webkit-keyframes ani-mouse {
 	0% {
@@ -409,7 +573,7 @@ background-color: white;
 
 #about > h2{
 
-font-family: osm;
+font-family: dense;
 letter-spacing: 8px;
 font-size: 4vw;
 text-align: center;

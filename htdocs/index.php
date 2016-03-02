@@ -28,7 +28,14 @@
     
 	
 	<!-- Navigation bar-->
-		<!-- <nav class="navbar navbar-default navbar-fixed-top">
+		
+		
+		<!-- Main front page properties -->
+
+	
+		<div class="container-fluid" id="main">
+		
+		<nav class="navbar navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -48,21 +55,103 @@
 				</div>
 				
 			</div>
-		</nav> -->
-		
-		<!-- Main front page properties -->
+		</nav>
+		<div class="row" id="glow">
+			<div class="col-lg-12 hidden-md hidden-sm hidden-xs">
+			
+			
+			</div>
+		</div>
 
-	<div class="main">
-		<div class= "col-xs-6 col-sm-12" id="hero">
-			<span class="logo"><img src="../graphics/logo.png" alt="light bulb" style="width:30%;height:8%;"></span>
+			<div class="row" id="text">
+				<div class= "col-sm-12 col-md-5 steven">
+
+				<span class="b">Steven</span>
+
+				</div>
+				<div class= "col-sm-12 col-md-2 pike">
+				
+				<span class="bold">Pike</span>
+				
+				</div>
+				<div class= "col-sm-12 col-md-5 designs">
+				
+				<span class="bod">Designs</span>
+
+				</div>
+			</div>
+			
+			<div class="row" id="subtext">
+				<div class= "col-md-12 hidden-sm hidden-xs">
+				<hr class="style3"></hr>
+					Freelance <span class="bold">Web Design</span> and <span class="bold">Front-End Developer</span><br>Based in Berkshire, England
+					<br><hr class="style2"></hr>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<!--<span class="logo"><img src="../graphics/logo.png" alt="light bulb" style="width:30%;height:8%;"></span>
 			<h1>STEVEN PIKE <span class="yellow">DESIGNS</span></h1>
 				<hr class="style"></hr>
-			<h2><span class="yellow">FREELANCE WEB DESIGN & Front-End Developer</span><br>based in Berkshire, England</h2>
+			<h2><span class="yellow">FREELANCE WEB DESIGN & FRONT-END DEVELOPER</span><br>BASED IN BERKSHIRE, ENGLAND</h2>
 				<hr class="style1"></hr>
 				
-				<a class="ghost-button1" href="#">PORTFOLIO</a>
-				<a class="ghost-button2" href="#">About</a>
-				<a class="ghost-button3" href="#">Contact</a>
+	
+				<a href="#" rel="" id="anchor1" class="ghost-button1">Portfolio</a>
+				<script class="secret-source">
+	   $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+</script>
+
+				
+				<a href="#myAnchor" rel="" id="anchor1" class="ghost-button2">About</a>
+				<script class="secret-source">
+	   $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+</script>
+
+				
+				
+				<a href="#" rel="" id="anchor1" class="ghost-button3">Contact</a>
+				<script class="secret-source">
+					$('a').click(function(){
+					$('html, body').animate({
+					scrollTop: $( $(this).attr('href') ).offset().top
+					}, 1000);
+					return false;
+					});
+				</script>
 				
 				
 			<span class="scroll-btn">
@@ -81,14 +170,14 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12" id="about">
-			
+				
 				<br><br><h2>Why hire <span class="yellow">me?</span></h2>
 				<br>
-				<div class="parallax">
+				<div class="parallax" id="myAnchor">
 				</div>
 			
 			
-			</div>
+			</div> -->
 		</div>
 	</div>
 
