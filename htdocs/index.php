@@ -19,23 +19,22 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	
-  </head>
-  <body>
+ </head>
+ <body>
 	<!-- Bootstrap Jquery must be before Javascript -->
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
     
 	
-	<!-- Navigation bar-->
-		
-		
 		<!-- Main front page properties -->
 
-	
-		<div class="container-fluid" id="main">
+				
+	<div class="container-fluid" id="main">
 		
-		<nav class="navbar navbar-fixed-top">
+		<!-- Navigation bar-->
+		
+		<nav class="navbar navbar-static-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -43,43 +42,45 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						</button>
-				<a href="" class="navbar-brand">Steven Pike Designs</a>
 				</div>
 				<div class="collapse navbar-collapse navbar-right" id="myNavbar">
+				
 					<ul class="nav navbar-nav">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">About Me</a></li> 
+						<li><a href="#myAnchor">About Me</a>
+						<script class="secret-source">
+	   $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+</script></li> 
 						<li><a href="#">Contact</a></li> 
 					</ul>
 				</div>
-				
 			</div>
 		</nav>
-		<div class="row" id="glow">
-			<div class="col-lg-12 hidden-md hidden-sm hidden-xs">
-			
-			
-			</div>
-		</div>
-
+		
 			<div class="row" id="text">
-				<div class= "col-sm-12 col-md-5 steven">
+				<div class= "col-xs-12 col-md-5 steven">
 
-				<span class="b">Steven</span>
+				<b>Steven
 
 				</div>
-				<div class= "col-sm-12 col-md-2 pike">
+				<div class= "col-xs-12 col-md-2 pike">
 				
 				<span class="bold">Pike</span>
 				
 				</div>
-				<div class= "col-sm-12 col-md-5 designs">
+				<div class= "col-xs-12 col-md-5 designs">
 				
-				<span class="bod">Designs</span>
+				Designs</b>
 
 				</div>
 			</div>
+			
 			
 			<div class="row" id="subtext">
 				<div class= "col-md-12 hidden-sm hidden-xs">
@@ -88,9 +89,172 @@
 					<br><hr class="style2"></hr>
 				</div>
 			</div>
-		</div>
+			
+
+
+			
+			
+			<div class="row" id="button">
+				<div class="col-xs-12">
+					<div class="arrow animated bounce">
+						<img width="60" height="60" alt="" src="../graphics/arrow.png" />
+					</div>
+				</div>
+			</div>
+			
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		
-		
+	<div class="container-fluid" id="about">
+			<div class="row" id="height">
+				<div class="col-xs-12 col-md-6 profile">
+					<h2>About</h2>
+					<hr class="style4"></hr>
+						<div class="me"><img src="../graphics/me2.jpg" class="me" alt="Me!" width="200px" height="200px"></div>
+						<div class="me2"></div>
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				</div>
+				<div class="col-xs-12 col-md-6 skills">
+					<div class="row-fluid rowheight">
+						<div class="col-xs-3 design">
+							<div class="top" id="red1"></div>
+							<div class="inside" id="red2">
+				
+					<br>Web Design
+					
+							</div>
+						</div>
+				
+						<div class="col-xs-3 dev">
+							<div class="top" id="purple1"></div>
+							<div class="inside" id="purple2">
+							
+					<br>Front-End Development
+					
+							</div>
+						</div>
+						
+						<div class="col-xs-3 responsive">
+							<div class="top" id="green1"></div>
+							<div class="inside" id="green2">
+							
+					<br>Responsive
+					
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="row-fluid rowheight">
+						<div class="col-xs-3 seo">
+							<div class="top" id="yellow1"></div>
+							<div class="inside" id="yellow2">
+				
+					<br>SEO
+					
+							</div>
+						</div>
+				
+						<div class="col-xs-3 bespoke">
+							<div class="top" id="mid1"></div>
+							<div class="inside" id="mid2">
+							
+					<br>Bespoke
+					
+							</div>
+						</div>
+						
+						<div class="col-xs-3 latest">
+							<div class="top" id="orange1"></div>
+							<div class="inside" id="orange2">
+							
+					<br>Latest Trends
+					
+							</div>
+						</div>
+					</div>
+
+				
+				
+				
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="row" id="height">
+				<div class="col-xs-12 col-md-6 info">
+				
+				</div>
+				<div class="col-xs-12 col-md-6 projects"></div>
+			</div>
+	</div> 
+
+
+
 		
 		
 		
@@ -165,22 +329,9 @@
 		</div>
 	</div>
 	
+	-->
 	
 	
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12" id="about">
-				
-				<br><br><h2>Why hire <span class="yellow">me?</span></h2>
-				<br>
-				<div class="parallax" id="myAnchor">
-				</div>
-			
-			
-			</div> -->
-		</div>
-	</div>
-
 		
 		
 		
