@@ -12,21 +12,10 @@
 	<link rel="stylesheet" href="../css/custom.css" type="text/css" title="myStyleSheet">
 	
 	
-	
-<link rel="stylesheet" type="text/css" href="../css/jquery.fullPage.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-<script src="../js/jquery.easings.min.js"></script>
 
-
-<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-<script type="text/javascript" src="../js/jquery.slimscroll.min.js"></script>
-
-<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
-	
-	
 	
 	
 	
@@ -37,17 +26,35 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<script src="../js/jquery-2.1.4.min.js"></script>
+
+	
+	
 	<script>
 	
-
-
 $(document).ready(function() {
     
+	
+	
+	
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
     
         /* Check the location of each desired element */
         $('.bubble').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},2000);
+                    
+            }
+            
+        }); 
+		
+		 $('.tab-content').each( function(i){
             
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -67,10 +74,15 @@ $(document).ready(function() {
 			width:jQuery(this).attr('data-percent')
 		},4000);
 	});
+	
+
     
     });
     
 });
+
+
+
 </script>
 	
 	
@@ -80,6 +92,8 @@ $(document).ready(function() {
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/form-validator.min.js"></script>  
+    <script type="text/javascript" src="../js/contact-form-script.js"></script>
     
 	
 		<!-- Main front page properties -->
@@ -124,7 +138,7 @@ $(document).ready(function() {
 });
 </script></li>
 
-						<li><a href="#portfolio">Portfolio</a>
+						<li><a href="#portfolio">Services</a>
 						
 						<script class="secret-source">
 	   $('a').click(function(){
@@ -177,7 +191,10 @@ $(document).ready(function() {
 				<hr class="style3"></hr>
 					Freelance <span class="bold">Web Design</span> and <span class="bold">Front-End Developer</span><br>Based in Berkshire, England
 					<br><hr class="style2"></hr>
+					<img src="../graphics/home.png" class="icon" alt="Me!" width="50px" height="50px">
+					
 				</div>
+
 			</div>
 			
 			<div class="row" id="main-bottom-row">
@@ -199,24 +216,7 @@ $(document).ready(function() {
 	</div>
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
+
 	<div class="container-fluid" id="about">
 		<div class="row" id="aboutanchor">
 			<div class="col-xs-12 col-md-6 abouttop1"></div>
@@ -235,13 +235,13 @@ $(document).ready(function() {
 		</div>
 		
 		<div class="row">
-			<div class="col-xs-12 col-md-6 aboutcontent1">
+			<div class="col-xs-12 col-sm-6 aboutcontent1">
 				
 				<img src="../graphics/me2.jpg" class="me2" alt="Me!" width="200px" height="200px">
 			
 			
 			</div>
-			<div class="col-xs-12 col-md-6 aboutcontent2">
+			<div class="col-xs-12 col-sm-6 aboutcontent2">
 			
 			<div class="bubble">Hi there! <br><br>My name is Steven Pike, I design and build bespoke & responsive websites for small to medium sized businesses. <br><br> Here are some of my skills:</div>
 			
@@ -289,11 +289,7 @@ $(document).ready(function() {
 	<div class="skill-bar-percent">50%</div>
 </div> 
 
-<hr class="style4"><div>
-			
-			
-
-			</div>
+<hr class="style4"></hr>
 	
 		</div>
 		<div class="row" id="about-bottom-row">
@@ -323,36 +319,69 @@ $(document).ready(function() {
 	
 		</div>
 		<div class="row">
-			<div class="wrap">
-  <ul class="tabs group">
-    <li><a class="active" href="#/one">Tab 1</a></li>
-    <li><a href="#/two">Tab 2</a></li>
-    <li><a href="#/three">Tab 3</a></li>
-  </ul>
-  <div id="panels">
-    <p id="one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit aliquam mauris, a mattis lectus varius id. Ut dolor tortor, hendrerit et porttitor in, gravida sed felis. Donec vehicula ex nec venenatis pulvinar. Donec vel sodales neque.</p>
-    <p id="two">Donec tincidunt tortor ut magna mollis sagittis. Mauris eu nibh non purus gravida hendrerit. Donec enim nisi, pretium eu libero sit amet, bibendum sagittis velit. Pellentesque non dapibus leo. Suspendisse ante tellus, volutpat ac leo eget, venenatis rhoncus sem.</p>
-    <p id="three"> Aenean dapibus eleifend venenatis. Integer et suscipit dui. Nam tellus diam, mattis in ultrices et, feugiat ac libero. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
-  </div>
-</div>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>
-(function($) {
-
-	var tabs =  $(".tabs li a");
-  
-	tabs.click(function() {
-		var panels = this.hash.replace('/','');
-		tabs.removeClass("active");
-		$(this).addClass("active");
-    $("#panels").find('p').hide();
-    $(panels).fadeIn(200);
-	});
-
-})(jQuery);
-</script>
+			<div class="col-md-offset-4 col-md-4">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="blue">Planning</a></li>
+                <li><a href="#Section2" aria-controls="profile" role="tab" data-toggle="tab" class="orange">Design</a></li>
+                <li><a href="#Section3" aria-controls="messages" role="tab" data-toggle="tab" class="blue">Build</a></li>
+				<li><a href="#Section4" aria-controls="messages" role="tab" data-toggle="tab" class="orange">Responsive</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active blue" id="Section1">
+				
+				<img src="../graphics/planning.png" class="icon" alt="Me!" width="50px" height="50px">
+				
+				
+                    <h4>1) Planning</h4>
+					<hr class="style4"></hr>
+                    <p>
+                        Before building a website there are many factors which influence the design. Each custom website built is <b>tailored</b> to the individual client in order to achieve the best results. Through <b>effective communication</b> the planning stage is important in determining the scope of the website, such as the functionality and information architecture.
+                    </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade orange" id="Section2">
+				
+				<img src="../graphics/ps.png" class="icon" alt="Me!" width="50px" height="50px">
+				
+                    <h4>2) Design</h4>
+					<hr class="style4"></hr>
+                    <p>
+					The design process is then carefully chosen based on the specific needs of the client, focusing on aspects such as <b>layout, colour palette and typefaces</b> in order to gain optimum results. Attention to detail is essential, keeping the design to a <b>simple yet effective</b> structure.
+                    </p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade blue" id="Section3">
+				
+				<img src="../graphics/code.png" class="icon" alt="Me!" width="50px" height="50px">
+				
+                    <h4>3) Build</h4>
+					<hr class="style4"></hr>
+                    <p>
+                        One thing I look for in this stage is writing good code, <b>less is better.</b> I'm always looking to improve my coding skills, as effective code means better learning and understanding. I am passionate in staying current with the <b>latest web technologies and trends</b> to help both my clients and further my skills in both web design and development.
+                    </p>
+                </div>
+				 <div role="tabpanel" class="tab-pane fade orange" id="Section4">
+				 
+				 <img src="../graphics/tab.png" class="icon" alt="Me!" width="50px" height="50px">
+				 
+                    <h4>4) Responsive</h4>
+					<hr class="style4"></hr>
+                    <p>
+                       The use of mobile devices to access the Internet is rapidly increasing, it is very important that potential customers can both access and function effectively on these mediums. All my websites are built to meet the responsive needs of different devices such as Mobile Phones and Tablets, not only Computers. 
+                    </p>
+                </div>
+            </div>
+        </div>
+		
+		
 		</div>
 		
-		
+		<hr class="style4"></hr>
+		<div class="row" id="about-bottom-row">
+			<div class="col-xs-12 col-md-6 aboutbottom3"></div>
+			<div class="col-xs-12 col-md-6 aboutbottom4"></div>
+		</div>
+
 	</div>
 	
 	
@@ -369,6 +398,48 @@ $(document).ready(function() {
 				<hr class="style5"></hr>
 
 			</div>
+			
+		</div>
+			
+		<div class="row">
+			<div class="col-md-offset-4 col-md-4">
+			
+<!-- Start Contact Form -->
+<form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+  <div class="form-group">
+    <div class="controls">
+      <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="controls">
+      <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="controls">
+      <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="controls">
+      <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
+      <div class="help-block with-errors"></div>
+    </div>  
+  </div>
+ 
+  <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
+  <div id="msgSubmit" class="h3 text-center hidden"></div> 
+  <div class="clearfix"></div>   
+ 
+</form>     
+<!-- End Contact Form -->
+			
+			</div>
+		</div>
 	
 		</div>
 	</div>
