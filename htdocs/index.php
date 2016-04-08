@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,6 +11,7 @@
 	
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/custom.css" type="text/css" title="myStyleSheet">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css" media="screen">
 	
 	
 
@@ -92,8 +94,7 @@ $(document).ready(function() {
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../js/form-validator.min.js"></script>  
-    <script type="text/javascript" src="../js/contact-form-script.js"></script>
+	
     
 	
 		<!-- Main front page properties -->
@@ -190,8 +191,18 @@ $(document).ready(function() {
 				<div class= "col-md-12 hidden-sm hidden-xs">
 				<hr class="style3"></hr>
 					Freelance <span class="bold">Web Design</span> and <span class="bold">Front-End Developer</span><br>Based in Berkshire, England
-					<br><hr class="style2"></hr>
-					<img src="../graphics/home.png" class="icon" alt="Me!" width="50px" height="50px">
+					<br><hr class="style2"></hr><br>
+					<button class="flat-butt flat-info-butt flat-double-butt flat-info-double-butt"><a href="#aboutanchor">HOME</a></button>
+					
+					<script class="secret-source">
+	   $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+</script>
+
 					
 				</div>
 
@@ -216,7 +227,6 @@ $(document).ready(function() {
 	</div>
 	
 	
-
 	<div class="container-fluid" id="about">
 		<div class="row" id="aboutanchor">
 			<div class="col-xs-12 col-md-6 abouttop1"></div>
@@ -249,7 +259,7 @@ $(document).ready(function() {
 		</div>
 		
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-sm-12 hidden-xs">
 
 			
 			
@@ -318,8 +328,8 @@ $(document).ready(function() {
 			</div>
 	
 		</div>
-		<div class="row">
-			<div class="col-md-offset-4 col-md-4">
+		<div class="row" id="tabs">
+			<div class="col-xs-12 col-lg-offset-4 col-lg-4">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li class="active"><a href="#Section1" aria-controls="home" role="tab" data-toggle="tab" class="blue">Planning</a></li>
@@ -402,47 +412,60 @@ $(document).ready(function() {
 		</div>
 			
 		<div class="row">
-			<div class="col-md-offset-4 col-md-4">
+			<div class="col-md-offset-4 col-md-4 contactform"><br>
+			
+			<p>For any enquiries, please feel free to contact me:</p><br>
+			
+			<p><b>Steven Pike<br>Freelance Web Design & Developer<br>stevepike26@gmail.com<b></p><br><br>
+			
+			
+			
 			
 <!-- Start Contact Form -->
-<form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
-  <div class="form-group">
-    <div class="controls">
-      <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
-      <div class="help-block with-errors"></div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="controls">
-      <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
-      <div class="help-block with-errors"></div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="controls">
-      <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
-      <div class="help-block with-errors"></div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="controls">
-      <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
-      <div class="help-block with-errors"></div>
-    </div>  
-  </div>
- 
-  <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
-  <div id="msgSubmit" class="h3 text-center hidden"></div> 
-  <div class="clearfix"></div>   
- 
-</form>     
+<!--<form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="controls">
+                  <textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>  
+              </div>
+
+              <button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div> 
+              <div class="clearfix"></div>   
+
+            </form>    --> 
+
+<hr class="style4"></hr>     
 <!-- End Contact Form -->
+			<script type="text/javascript" src="../js/jquery-min.js"></script>    
+			<script type="text/javascript" src="../js/form-validator.min.js"></script>  
+			<script type="text/javascript" src="../js/contact-form-script.js"></script>
+			
 			
 			</div>
 		</div>
 	
 		</div>
-	</div>
+
 	
 	
 	
